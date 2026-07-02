@@ -8,6 +8,7 @@
 | --- | --- |
 | [Agent 产品操作系统](01-agent-product-operating-system.md) | 从 Context、Tool、Permission、Workflow、Evaluation、Memory 六层设计 Agent 产品 |
 | [Agent Workflow 与评估](02-agent-workflow-evaluation.md) | 从目标、Context、工具、权限和评估设计可执行 Agent Workflow |
+| [AI Native Team 协作基础设施](03-ai-native-team-collaboration.md) | 从 Team Memory、Organization State 和 Workflow 设计团队级 AI 协作 |
 | Memory | 长期记忆如何影响 AI 产品体验 |
 | Context | 上下文管理的产品边界 |
 | MCP | 工具连接层如何改变 AI 工作流 |
