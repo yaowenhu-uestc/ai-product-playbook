@@ -2,7 +2,7 @@
 
 这里记录 Agent、Memory、Context、MCP、Workspace 等 AI 原生工作流实践。
 
-## 主题
+## 已收录
 
 | 主题 | 说明 |
 | --- | --- |
@@ -11,6 +11,11 @@
 | [AI Native Team 协作基础设施](03-ai-native-team-collaboration.md) | 从 Team Memory、Organization State 和 Workflow 设计团队级 AI 协作 |
 | [Team Memory 系统设计：压缩比记录更难](04-team-memory-compression.md) | 三层决策模型、接受率毕业机制、静默原则与推拉时间结构 |
 | [长期在线 Agent 自动化的工程手记](05-always-on-agent-ops.md) | 单机部署、告警设计、分阶段重试与查事实源的排障方法 |
+
+## 规划中
+
+| 主题 | 说明 |
+| --- | --- |
 | Memory | 长期记忆如何影响 AI 产品体验 |
 | Context | 上下文管理的产品边界 |
 | MCP | 工具连接层如何改变 AI 工作流 |
