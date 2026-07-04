@@ -12,6 +12,6 @@
 
 ## 已收录
 
-| Skill 方法 | 说明 |
-| --- | --- |
-| [Skill 评估框架](01-skill-evaluation-framework.md) | 从元数据、执行引导、工作流、资源和验证标准评估 Skill 质量 |
+| # | Skill 方法 | 说明 |
+| --- | --- | --- |
+| 1 | [Skill 评估框架](01-skill-evaluation-framework.md) | 从元数据、执行引导、工作流、资源和验证标准评估 Skill 质量 |
