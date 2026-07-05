@@ -12,6 +12,7 @@
 | 4 | [Team Memory 系统设计：压缩比记录更难](04-team-memory-compression.md) | 三层决策模型、接受率毕业机制、静默原则与推拉时间结构 |
 | 5 | [长期在线 Agent 自动化的工程手记](05-always-on-agent-ops.md) | 单机部署、告警设计、分阶段重试与查事实源的排障方法 |
 | 6 | [团队 IM 里的 AI 伙伴](06-team-chat-agent-design.md) | 人设、Context 分层、能力-安全边界与延迟四个产品变量 |
+| 7 | [自动化的权限边界与最后一公里](07-automation-permission-last-mile.md) | UI 权限 ≠ API 权限：写入探测前置、降级梯度与失败不丢产物 |
 
 ## 规划中
 
