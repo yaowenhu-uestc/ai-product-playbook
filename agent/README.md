@@ -19,6 +19,7 @@
 | 11 | [Agent 执行基础设施变更：凭证卫生与人机交接点](11-agent-infra-change-guardrails.md) | 最小权限铸造、组织资产与个人资产、404 掩盖权限陷阱、实时同步选型与人机交接点设计 |
 | 12 | [把 Agent 代码纳入版本管理：代码、状态、用户数据、凭证的四层分离](12-versioning-agent-code-data-hygiene.md) | 工作目录是隐私高危区、白名单拷贝而非原地 gitignore、推送前密钥扫描与依赖只声明不打包 |
 | 13 | [声明交接点还不够：Agent 驱动 UI 时，不可逆操作要有执行防线](13-enforcing-agent-handoff-gates.md) | 声明的交接点≠被机制守住的交接点、三条执行层防线、越界后如实交代的信任校准 |
+| 14 | [用嘴编程会腐烂：把 AI 编码变成有护栏的工程](14-structured-vibe-coding.md) | 文档即上下文、四步流程、监工-子 Agent 分层、每行代码配单测与类型检查 |
 
 ## 规划中
 

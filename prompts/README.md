@@ -16,3 +16,4 @@
 | 2 | [记忆筛选器 Prompt 模板](02-memory-filter-prompt.md) | 把团队每日事件流压缩成候选记忆；含早报"注意力路由器"变体 |
 | 3 | [Playbook 更新判断清单](03-playbook-update-checklist.md) | 判断聊天内容是否值得更新到公开 Playbook，并给出执行 Prompt |
 | 4 | [第三方集成接入自检 Prompt](04-third-party-integration-checklist.md) | 接入前确认凭证范围、归属、失败排查顺序、同步方式与人机交接点 |
+| 5 | [结构化编码的四段式 Prompt 与生成编排的元 Prompt](05-spec-driven-coding-prompts.md) | 目标/输入/输出/步骤骨架、需求→设计→任务四步 Prompt 与生成监工编排的元 Prompt |
