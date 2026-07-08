@@ -20,6 +20,7 @@
 | 12 | [把 Agent 代码纳入版本管理：代码、状态、用户数据、凭证的四层分离](12-versioning-agent-code-data-hygiene.md) | 工作目录是隐私高危区、白名单拷贝而非原地 gitignore、推送前密钥扫描与依赖只声明不打包 |
 | 13 | [声明交接点还不够：Agent 驱动 UI 时，不可逆操作要有执行防线](13-enforcing-agent-handoff-gates.md) | 声明的交接点≠被机制守住的交接点、三条执行层防线、越界后如实交代的信任校准 |
 | 14 | [用嘴编程会腐烂：把 AI 编码变成有护栏的工程](14-structured-vibe-coding.md) | 文档即上下文、四步流程、监工-子 Agent 分层、每行代码配单测与类型检查 |
+| 15 | [跨系统内容搬运的三个陷阱](15-cross-system-content-migration.md) | 格式转换管道会静默丢富媒体、粗粒度权限推不出细粒度权限、分类体系缺类目时该扩展而非硬凑 |
 
 ## 规划中
 
