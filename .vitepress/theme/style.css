@@ -4,6 +4,7 @@ html { scroll-behavior: smooth; background: var(--paper); }
 body { color: var(--ink); background: linear-gradient(90deg, var(--paper-alt) 0, var(--paper) 35%, var(--paper) 100%); }
 .VPContent { font-family: var(--vp-font-family-serif); }
 .VPNavBar, .VPSidebar { border-color: var(--line); }
+.sidebar-toggle { display: none; }
 .home-hero { max-width: 1000px; margin: 0 auto; padding: 12vh 5vw 11vh; }
 .eyebrow { color: var(--accent); font: 600 12px/1.5 var(--vp-font-family-base); letter-spacing: .12em; }
 .home-hero h1 { max-width: 780px; margin: 22px 0; font-size: clamp(48px, 8.5vw, 92px); line-height: 1.02; letter-spacing: -.07em; }
@@ -31,4 +32,7 @@ body { color: var(--ink); background: linear-gradient(90deg, var(--paper-alt) 0,
 .home-signature { border-top: 1px solid var(--line); margin-top: 70px; padding-top: 24px; }
 .home-signature p { margin: 0 0 6px; font-size: 20px; }
 .home-signature span { color: var(--muted); font: 14px/1.6 var(--vp-font-family-base); }
+@media (min-width: 960px) { .sidebar-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 44px; height: 44px; padding: 0 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper-alt); color: var(--ink); font: 600 12px/1 var(--vp-font-family-base); cursor: pointer; transition: background-color .2s ease, color .2s ease, opacity .1s ease, transform .1s ease; } .sidebar-toggle:hover { background: var(--ink); color: var(--paper); } .sidebar-toggle:active { opacity: .85; transform: scale(.97); } .sidebar-toggle svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; } html.sidebar-collapsed .VPSidebar { opacity: 0; pointer-events: none; transform: translateX(-100%); visibility: hidden; } html.sidebar-collapsed .VPContent.has-sidebar { padding-left: 0; } html.sidebar-collapsed .VPNavBar.has-sidebar .title { position: relative; padding: 0 32px; width: auto; } html.sidebar-collapsed .VPNavBar.has-sidebar .content, html.sidebar-collapsed .VPNavBar.has-sidebar .divider, html.sidebar-collapsed .VPLocalNav.has-sidebar { padding-left: 0; } }
+@media (min-width: 1440px) { html.sidebar-collapsed .VPContent.has-sidebar, html.sidebar-collapsed .VPNavBar.has-sidebar .content, html.sidebar-collapsed .VPNavBar.has-sidebar .divider, html.sidebar-collapsed .VPLocalNav.has-sidebar { padding-left: calc((100vw - var(--vp-layout-max-width)) / 2); } }
+@media (prefers-reduced-motion: reduce) { .sidebar-toggle, .VPSidebar, .VPContent { transition: none !important; } }
 @media (max-width: 640px) { .home-hero { padding-top: 72px; } .content-group ul { columns: 1; } .content-directory > h2 { margin-bottom: 42px; } }
