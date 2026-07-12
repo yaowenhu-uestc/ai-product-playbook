@@ -1,0 +1,20 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "ai-product-playbook-counter",
+  "main": "workers/visit-counter.js",
+  "compatibility_date": "2026-07-12",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "VISIT_COUNTER",
+        "class_name": "VisitCounter"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["VisitCounter"]
+    }
+  ]
+}
