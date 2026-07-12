@@ -1,0 +1,54 @@
+name: Deploy Playbook
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "product-notes/**"
+      - "agent/**"
+      - "prompts/**"
+      - "skills/**"
+      - "learning/**"
+      - "resources/**"
+      - ".vitepress/**"
+      - "scripts/**"
+      - "index.md"
+      - "package.json"
+      - "package-lock.json"
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/configure-pages@v5
+      - run: npm ci
+      - run: npm run docs:build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .vitepress/dist
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

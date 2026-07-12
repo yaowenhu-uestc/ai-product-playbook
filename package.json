@@ -1,0 +1,14 @@
+{
+  "name": "ai-product-playbook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:prepare": "node scripts/generate-content-index.mjs",
+    "docs:dev": "npm run docs:prepare && vitepress dev .",
+    "docs:build": "npm run docs:prepare && vitepress build .",
+    "docs:preview": "vitepress preview ."
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}
