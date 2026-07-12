@@ -1,0 +1,9 @@
+title: AI Product Playbook
+description: AI 产品经理的实践手册
+url: https://yaowenhu-uestc.github.io
+baseurl: /ai-product-playbook
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock

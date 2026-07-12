@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<main class="book-shell">
+  <aside class="toc" aria-label="全书目录">
+    <a class="toc-home" href="{{ '/' | relative_url }}">封面与目录</a>
+    {% for section in site.data.toc %}
+      <p>{{ section.title }}</p>
+      <ul>{% for item in section.items %}<li><a class="{% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>{% endfor %}</ul>
+    {% endfor %}
+  </aside>
+  <article class="chapter">
+    <nav class="crumb">{{ page.part }} / {{ page.chapter }}</nav>
+    <h1>{{ page.title }}</h1>
+    <p class="deck">{{ page.deck }}</p>
+    {{ content }}
+    <nav class="chapter-nav">
+      {% if page.previous %}<a href="{{ page.previous | relative_url }}">← {{ page.previous_title }}</a>{% endif %}
+      {% if page.next %}<a href="{{ page.next | relative_url }}">{{ page.next_title }} →</a>{% endif %}
+    </nav>
+  </article>
+</main>
+<script>addEventListener('scroll',()=>document.documentElement.style.setProperty('--progress',(scrollY/(document.body.scrollHeight-innerHeight)*100||0)+'%'));</script>

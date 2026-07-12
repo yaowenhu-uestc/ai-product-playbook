@@ -2,6 +2,8 @@
 
 AI 产品经理的实践手册。
 
+> 在线阅读：[《AI Product Playbook：AI 产品经理的实践手册》](https://yaowenhu-uestc.github.io/ai-product-playbook/)
+
 这个仓库不是 AI 新闻摘抄，也不是通用教程。它用于沉淀我作为 AI 产品经理 / AI 产品实践者，在学习、使用和设计 AI 产品时形成的判断、方法、Prompt、Agent Workflow 和产品手记。
 
 核心假设：
