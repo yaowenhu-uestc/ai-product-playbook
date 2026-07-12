@@ -4,7 +4,8 @@ import { contentCount, contentGroups } from "../../generated/content-index";
 
 <template>
   <section id="contents" class="content-directory">
-    <p>CONTENTS · {{ contentCount }} 篇原文</p>
+    <p class="eyebrow">CONTENTS · {{ contentCount }} 篇原文</p>
+    <h2>全书目录</h2>
     <div v-for="group in contentGroups" :key="group.directory" class="content-group">
       <h2>{{ group.text }}</h2>
       <ul>

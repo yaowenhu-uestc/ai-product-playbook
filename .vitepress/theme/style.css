@@ -1,17 +1,23 @@
-:root { --vp-c-brand-1: #a54725; --vp-c-brand-2: #bf6240; --vp-font-family-base: ui-sans-serif, system-ui, sans-serif; --vp-font-family-mono: ui-monospace, monospace; --vp-font-family-serif: Georgia, "Noto Serif SC", "Songti SC", serif; }
+:root { --ink: #1d1b18; --muted: #6f6b62; --line: #ded9d0; --paper: #fbfaf7; --paper-alt: #f4f1ea; --accent: #a54725; --vp-c-brand-1: var(--accent); --vp-c-brand-2: #bf6240; --vp-c-bg: var(--paper); --vp-c-bg-alt: var(--paper-alt); --vp-c-bg-elv: var(--paper); --vp-c-text-1: var(--ink); --vp-c-text-2: var(--muted); --vp-c-divider: var(--line); --vp-nav-bg-color: color-mix(in srgb, var(--paper) 92%, transparent); --vp-sidebar-bg-color: var(--paper-alt); --vp-font-family-base: ui-sans-serif, system-ui, sans-serif; --vp-font-family-mono: ui-monospace, monospace; --vp-font-family-serif: Georgia, "Noto Serif SC", "Songti SC", serif; }
+:root.dark { --ink: #f4f0e8; --muted: #b8b1a6; --line: #4b463e; --paper: #1d1b18; --paper-alt: #25221e; --accent: #df7955; --vp-c-brand-1: var(--accent); --vp-c-brand-2: #efa080; --vp-c-bg: var(--paper); --vp-c-bg-alt: var(--paper-alt); --vp-c-bg-elv: #2c2823; --vp-c-text-1: var(--ink); --vp-c-text-2: var(--muted); --vp-c-divider: var(--line); --vp-nav-bg-color: color-mix(in srgb, var(--paper) 92%, transparent); --vp-sidebar-bg-color: var(--paper-alt); }
+html { scroll-behavior: smooth; background: var(--paper); }
+body { color: var(--ink); background: linear-gradient(90deg, var(--paper-alt) 0, var(--paper) 35%, var(--paper) 100%); }
 .VPContent { font-family: var(--vp-font-family-serif); }
-.home-hero { max-width: 880px; margin: 0 auto; padding: 14vh 24px 9vh; }
-.home-hero > p, .content-directory > p { color: var(--vp-c-brand-1); font: 600 12px/1.5 var(--vp-font-family-base); letter-spacing: .12em; }
-.home-hero h1 { margin: 22px 0; font-size: clamp(48px, 8vw, 88px); line-height: 1.04; letter-spacing: -.06em; }
-.home-hero > div { max-width: 680px; font-size: clamp(20px, 3vw, 28px); line-height: 1.55; color: var(--vp-c-text-2); }
-.home-hero > a { display: inline-block; margin-top: 18px; padding: 12px 18px; background: var(--vp-c-text-1); color: var(--vp-c-bg); text-decoration: none; font: 600 14px/1 var(--vp-font-family-base); }
-.visit-stats { margin: 30px 0 0; color: var(--vp-c-text-2); font: 14px/1 var(--vp-font-family-base); }
-.visit-stats strong { color: var(--vp-c-text-1); font-variant-numeric: tabular-nums; }
-.content-directory { max-width: 880px; margin: 0 auto; padding: 0 24px 96px; }
-.content-group { border-top: 1px solid var(--vp-c-divider); padding: 22px 0; }
-.content-group h2 { margin: 0 0 12px; font: 600 17px/1.5 var(--vp-font-family-base); }
+.VPNavBar, .VPSidebar { border-color: var(--line); }
+.home-hero { max-width: 1000px; margin: 0 auto; padding: 11vh 5vw 8vh; }
+.eyebrow { color: var(--accent); font: 600 12px/1.5 var(--vp-font-family-base); letter-spacing: .12em; }
+.home-hero h1 { max-width: 780px; margin: 20px 0; font-size: clamp(44px, 8vw, 88px); line-height: 1.04; letter-spacing: -.06em; }
+.subtitle { max-width: 680px; margin: 0; font-size: clamp(20px, 3vw, 29px); line-height: 1.5; }
+.intro { max-width: 650px; margin: 36px 0; color: var(--muted); }
+.start { display: inline-block; margin-top: 18px; padding: 12px 20px; background: var(--ink); color: var(--paper); text-decoration: none; font: 600 14px/1 var(--vp-font-family-base); }
+.visit-stats { margin: 0 0 28px; color: var(--muted); font: 14px/1 var(--vp-font-family-base); }
+.visit-stats strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.content-directory { max-width: 1000px; margin: 0 auto; padding: 0 5vw 12vh; }
+.content-directory > h2 { margin: 54px 0 18px; font-size: 30px; }
+.content-group { border-top: 1px solid var(--line); padding: 18px 0; }
+.content-group h2 { margin: 0 0 10px; font: 600 16px/1.5 var(--vp-font-family-base); }
 .content-group ul { columns: 2; margin: 0; padding: 0; list-style: none; }
-.content-group li { break-inside: avoid; margin: 6px 0; }
-.content-group a { color: var(--vp-c-text-1); text-decoration: none; }
-.content-group a:hover { color: var(--vp-c-brand-1); }
+.content-group li { break-inside: avoid; margin: 4px 0; }
+.content-group a { color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; }
+.content-group a:hover { color: var(--accent); border-color: var(--accent); }
 @media (max-width: 640px) { .home-hero { padding-top: 72px; } .content-group ul { columns: 1; } }
