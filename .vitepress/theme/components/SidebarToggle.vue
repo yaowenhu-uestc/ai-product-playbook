@@ -28,8 +28,7 @@ function toggleSidebar() {
     @click="toggleSidebar"
   >
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M4 6h10M4 12h10M4 18h10M18 8v8M15 12h6" />
+      <path d="M5 6h10M5 12h10M5 18h10M19 8v8M16 12h5" />
     </svg>
-    <span>{{ collapsed ? "展开目录" : "收起目录" }}</span>
   </button>
 </template>
