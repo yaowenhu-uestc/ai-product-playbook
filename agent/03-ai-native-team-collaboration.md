@@ -1,5 +1,7 @@
 # AI Native Team 协作基础设施
 
+> **第二部 · Agent 实践 · 第10章**
+
 ## 结论
 
 AI Native Team 的核心优势，不是团队里用了多少 AI 工具，而是能不能持续降低 Team Context Friction。

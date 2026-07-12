@@ -1,5 +1,7 @@
 # Playbook 更新判断清单
 
+> **第三部 · Prompt · 第31章**
+
 ## 结论
 
 AI Product Playbook 不需要每天强行更新。更好的节奏是：

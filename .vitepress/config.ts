@@ -9,14 +9,14 @@ export default defineConfig({
   cleanUrls: true,
   srcExclude: ["inbox/**", "README.md"],
   themeConfig: {
-    nav: [{ text: "GitHub", link: "https://github.com/yaowenhu-uestc/ai-product-playbook" }],
-    sidebar: contentGroups.map(({ text, items }) => ({ text, items })),
+    nav: [
+      { text: "首页", link: "/" },
+      { text: "目录", link: "/#contents" },
+      { text: "GitHub", link: "https://github.com/yaowenhu-uestc/ai-product-playbook" },
+    ],
+    sidebar: contentGroups.map(({ partLabel, items }) => ({ text: partLabel, items })),
     outline: { level: [2, 3], label: "本页目录" },
     docFooter: { prev: "上一篇", next: "下一篇" },
-    editLink: {
-      pattern: "https://github.com/yaowenhu-uestc/ai-product-playbook/edit/main/:path",
-      text: "在 GitHub 编辑此页",
-    },
-    footer: { message: "MIT License", copyright: "AI Product Playbook" },
+    footer: { message: "MIT License", copyright: "© 2026 胡耀文" },
   },
 });

@@ -40,7 +40,10 @@ export default {
     }
 
     const id = env.VISIT_COUNTER.idFromName("ai-product-playbook");
-    return env.VISIT_COUNTER.get(id).fetch("https://counter/count");
+    const response = await env.VISIT_COUNTER.get(id).fetch("https://counter/count");
+    const headers = new Headers(response.headers);
+    Object.entries(corsHeaders()).forEach(([name, value]) => headers.set(name, value));
+    return new Response(response.body, { status: response.status, headers });
   },
 };
 
