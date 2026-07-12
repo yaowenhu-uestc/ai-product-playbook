@@ -15,6 +15,7 @@ export default defineConfig({
       { text: "GitHub", link: "https://github.com/yaowenhu-uestc/ai-product-playbook" },
     ],
     sidebar: contentGroups.map(({ partLabel, items }) => ({ text: partLabel, items })),
+    aside: "left",
     outline: { level: [2, 3], label: "本页目录" },
     docFooter: { prev: "上一篇", next: "下一篇" },
     footer: { message: "MIT License", copyright: "© 2026 胡耀文" },
