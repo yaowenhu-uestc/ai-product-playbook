@@ -7,13 +7,17 @@ const collapsed = ref(false);
 const applyState = () => document.documentElement.classList.toggle("outline-collapsed", collapsed.value);
 
 onMounted(() => {
-  collapsed.value = localStorage.getItem(storageKey) === "true";
+  try {
+    collapsed.value = localStorage.getItem(storageKey) === "true";
+  } catch {}
   applyState();
 });
 
 function toggleOutline() {
   collapsed.value = !collapsed.value;
-  localStorage.setItem(storageKey, String(collapsed.value));
+  try {
+    localStorage.setItem(storageKey, String(collapsed.value));
+  } catch {}
   applyState();
 }
 </script>

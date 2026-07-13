@@ -1,6 +1,12 @@
 import { defineConfig } from "vitepress";
 import { contentGroups } from "./generated/content-index";
 
+const directoryStateScript = `try {
+  const root = document.documentElement;
+  root.classList.toggle("sidebar-collapsed", localStorage.getItem("playbook-sidebar-collapsed") === "true");
+  root.classList.toggle("outline-collapsed", localStorage.getItem("playbook-outline-collapsed") === "true");
+} catch {}`;
+
 export default defineConfig({
   lang: "zh-CN",
   title: "AI Product Playbook",
@@ -8,6 +14,7 @@ export default defineConfig({
   base: "/ai-product-playbook/",
   cleanUrls: true,
   srcExclude: ["inbox/**", "README.md"],
+  head: [["script", {}, directoryStateScript]],
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
